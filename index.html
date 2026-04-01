@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow">
+  <title>Victor Bian</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__brand">Victor Bian</a>
+      <button class="nav__toggle" aria-label="Toggle navigation">&#9776;</button>
+      <div class="nav__links">
+        <a href="#flagship" class="nav__link">Work</a>
+        <a href="#strengths" class="nav__link">Strengths</a>
+        <a href="#experiments" class="nav__link">Experiments</a>
+        <a href="#thinking" class="nav__link">Thinking</a>
+        <a href="#looking-for" class="nav__link">Fit</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- 1. Hero / Positioning -->
+    <section id="positioning" class="section hero">
+      <div class="hero__inner">
+        <div class="hero__text">
+          <h1 class="hero__headline" data-pretext-balance>I take AI products from concept to production &mdash; across both technical and business lines.</h1>
+          <p class="hero__sub" data-pretext-balance>I have done this three times: founded AI companies, hired and led a 40-person team, shipped products to 1,900+ users. Before that, I led $70M fundraises and worked on $1.5B in healthcare M&amp;A.</p>
+          <ul class="hero__bullets">
+            <li>Define AI workflows and ship them &mdash; not just prototype them</li>
+            <li>Translate between engineering teams, executives, and end users</li>
+            <li>Run product and distribution experiments fast, learn faster</li>
+          </ul>
+        </div>
+        <div class="hero__photo">
+          <img src="headshot.png" alt="Profile photo" width="160" height="160">
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Flagship Work -->
+    <section id="flagship" class="section">
+      <p class="section__label">Flagship Work</p>
+
+      <article class="project-card">
+        <h3 class="project-card__name">Semper Signum &amp; Xvary</h3>
+        <p class="project-card__meta">Founder &middot; 2026 &middot; <a href="https://sempersignum.com/" target="_blank" rel="noopener">sempersignum.com</a> (institutional) &middot; <a href="https://xvary.com/" target="_blank" rel="noopener">xvary.com</a> (consumer)</p>
+        <dl class="project-card__dl">
+          <dt>Problem</dt>
+          <dd>Equity research follows repeatable patterns &mdash; reading filings, cross-referencing data, writing memos &mdash; but analysts still spend days on each report. The same core problem applies at different scales: institutional (hedge funds, RIAs) and consumer (individual investors).</dd>
+          <dt>Built</dt>
+          <dd>Agentic system that ingests data, runs multi-step analysis, and generates structured research reports. Designed the orchestration layer to catch step-level failures before they corrupt downstream output. Shipped two products from the same core: Semper Signum for institutions, Xvary for consumers &mdash; different interfaces, different trust requirements, same underlying system.</dd>
+          <dt>Result</dt>
+          <dd>End-to-end pipeline: raw data in, formatted equity research report out. Both products live and validating with target users.</dd>
+          <dt>Insight</dt>
+          <dd>Full automation breaks when data sufficiency varies across cases. Human-in-the-loop is not a compromise &mdash; it is a design requirement when inputs are unpredictable. Building for two audiences from the same core forced clarity on what is platform and what is surface.</dd>
+        </dl>
+        <div class="tag-row">
+          <span class="tag">Agentic Orchestration</span>
+          <span class="tag">Multi-step Pipelines</span>
+          <span class="tag">Data Ingestion</span>
+          <span class="tag">LLMs</span>
+          <span class="tag">Consumer + Institutional</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3 class="project-card__name">Sentari AI</h3>
+        <p class="project-card__meta">Founder &middot; 2025&ndash;2026 &middot; <a href="https://withsentari.com/" target="_blank" rel="noopener">withsentari.com</a> &middot; App Store + Web</p>
+        <dl class="project-card__dl">
+          <dt>Problem</dt>
+          <dd>Fitness devices track your body passively. Nothing tracks how you think. Journaling exists, but no system learns from it or adapts to you.</dd>
+          <dt>Built</dt>
+          <dd>Voice and text journaling with memory, personality modeling, thematic tagging, and adaptive feedback. Screened 600+ applicants, hired and managed a 40-person cross-functional team. Shipped to App Store and web.</dd>
+          <dt>Result</dt>
+          <dd>1,900 users. Ran SEO, outreach, and content experiments to drive acquisition. Growth plateaued &mdash; journaling demands active input every session, unlike passive trackers. Made the call to wind down rather than force a market that was not there.</dd>
+          <dt>Insight</dt>
+          <dd>Building the product was not the hard part. Distribution was. Products that require behavior change fail at habit formation, not model quality. I came out of this knowing exactly where my growth gap is.</dd>
+        </dl>
+        <div class="tag-row">
+          <span class="tag">Whisper</span>
+          <span class="tag">GPT</span>
+          <span class="tag">Memory Systems</span>
+          <span class="tag">Semantic Tagging</span>
+          <span class="tag">Voice AI</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3 class="project-card__name">Cerno Labs</h3>
+        <p class="project-card__meta">Founder &middot; 2024 &middot; AI Search for Enterprise</p>
+        <dl class="project-card__dl">
+          <dt>Problem</dt>
+          <dd>Enterprise users searching multilingual, high-context domains (Egypt, Japan) get results they cannot verify or trust.</dd>
+          <dt>Built</dt>
+          <dd>RAG pipeline with grounding verification, caching, and agentic query layer &mdash; memory, domain filters, source inspection. Pitched to telecom executives. Led VC fundraising in New York and Tokyo.</dd>
+          <dt>Result</dt>
+          <dd>Technically sound product, but enterprise users kept saying the same thing: they did not want better search &mdash; they wanted answers they could trust. That reframed the entire product question.</dd>
+          <dt>Insight</dt>
+          <dd>Explainability builds trust. Novelty does not. Users choose a system they can verify over one they cannot.</dd>
+        </dl>
+        <div class="tag-row">
+          <span class="tag">RAG</span>
+          <span class="tag">Grounding Verification</span>
+          <span class="tag">Caching</span>
+          <span class="tag">Agentic Query</span>
+          <span class="tag">Multilingual</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- 3. What I'm Good At -->
+    <section id="strengths" class="section">
+      <p class="section__label">What I'm Good At</p>
+      <dl class="strengths-dl">
+        <dt>AI Systems Thinking</dt>
+        <dd>I design AI systems that work under real-world constraints, not just in demos. Multi-step orchestration, failure handling, human-in-the-loop &mdash; I think at the system level, not just the model level.</dd>
+
+        <dt>0&rarr;1 Execution</dt>
+        <dd>I build and test full-stack product systems, from product to distribution. Three companies from scratch, 40 people hired, products shipped to App Store and web. I do not just build features &mdash; I build the product, the growth channels, and the feedback loops together.</dd>
+
+        <dt>Structured Learning</dt>
+        <dd>I run fast experiments and turn them into reusable insights that guide product decisions. Every project on this page produced a clear takeaway that shaped what I built next.</dd>
+      </dl>
+    </section>
+
+    <!-- 4. Selected Experiments -->
+    <section id="experiments" class="section">
+      <p class="section__label">Selected Experiments</p>
+
+      <div class="experiment-grid">
+
+        <article class="experiment-card">
+          <h3 class="experiment-card__name">Outreach Automation</h3>
+          <dl class="experiment-card__fields">
+            <dt>Goal</dt>
+            <dd>Automate B2B distribution end-to-end</dd>
+            <dt>Built</dt>
+            <dd>Lead sourcing, LinkedIn search, connection requests, messaging, email &mdash; one automated pipeline</dd>
+            <dt>Result</dt>
+            <dd>Running across multiple channels with zero manual sends</dd>
+            <dt>Insight</dt>
+            <dd>Outreach can be automated. Persuasion cannot.</dd>
+          </dl>
+        </article>
+
+        <article class="experiment-card">
+          <h3 class="experiment-card__name">SEO Growth Engine</h3>
+          <dl class="experiment-card__fields">
+            <dt>Goal</dt>
+            <dd>Drive organic traffic through AI-generated content</dd>
+            <dt>Built</dt>
+            <dd>Blog pipelines targeting high-intent emotional queries across projects</dd>
+            <dt>Result</dt>
+            <dd>Steady organic traffic; playbook reused across three products</dd>
+            <dt>Insight</dt>
+            <dd>SEO is intent capture. It works when tied to emotional urgency, not product features.</dd>
+          </dl>
+        </article>
+
+        <article class="experiment-card">
+          <h3 class="experiment-card__name">Portabrella Canada</h3>
+          <dl class="experiment-card__fields">
+            <dt>Goal</dt>
+            <dd>Build and scale a DTC e-commerce brand from scratch</dd>
+            <dt>Built</dt>
+            <dd>End-to-end DTC operation &mdash; product sourcing, site, SEO, fulfillment</dd>
+            <dt>Result</dt>
+            <dd>$50K in sales (2023). #1 on Google for &ldquo;travel beach umbrella Canada&rdquo;</dd>
+            <dt>Insight</dt>
+            <dd>SEO + a clear niche beats paid ads for a bootstrapped DTC brand. Ranking #1 is a distribution system, not a marketing tactic.</dd>
+          </dl>
+        </article>
+
+        <article class="experiment-card">
+          <h3 class="experiment-card__name">OpenClaw Desktop</h3>
+          <dl class="experiment-card__fields">
+            <dt>Goal</dt>
+            <dd>Give non-technical users a one-click way to run a complex AI tool</dd>
+            <dt>Built</dt>
+            <dd>Desktop wrapper with one-click installer and distribution site</dd>
+            <dt>Result</dt>
+            <dd>2&ndash;3K monthly organic visitors within weeks</dd>
+            <dt>Insight</dt>
+            <dd>Packaging beats invention. Timing and distribution matter more than technical complexity.</dd>
+          </dl>
+        </article>
+
+        <article class="experiment-card">
+          <h3 class="experiment-card__name">YouTube Automation</h3>
+          <dl class="experiment-card__fields">
+            <dt>Goal</dt>
+            <dd>Fully automated content pipelines for non-English audiences</dd>
+            <dt>Built</dt>
+            <dd>Arabic and Spanish channels with automated scripting, generation, and posting</dd>
+            <dt>Result</dt>
+            <dd>~100 subscribers per channel, working pipeline</dd>
+            <dt>Insight</dt>
+            <dd>Automation handles production. It does not handle storytelling.</dd>
+          </dl>
+        </article>
+
+        <article class="experiment-card">
+          <h3 class="experiment-card__name">OwnEveryLook</h3>
+          <dl class="experiment-card__fields">
+            <dt>Goal</dt>
+            <dd>AI-powered virtual clothing try-on</dd>
+            <dt>Built</dt>
+            <dd>Chrome plugin: body estimation from photos, generative try-on images</dd>
+            <dt>Result</dt>
+            <dd>Fashion brand interest, but physics of fabric exposed hard limits</dd>
+            <dt>Insight</dt>
+            <dd>If anyone can clone it in a weekend, your moat is not technology.</dd>
+          </dl>
+        </article>
+
+        <article class="experiment-card">
+          <h3 class="experiment-card__name">Admit AI</h3>
+          <dl class="experiment-card__fields">
+            <dt>Goal</dt>
+            <dd>AI-augmented college admissions guidance</dd>
+            <dt>Built</dt>
+            <dd>GPT chatbot with prompt stacks, session memory, and feedback loops</dd>
+            <dt>Result</dt>
+            <dd>1,000+ queries served, 40% drop-off after first use</dd>
+            <dt>Insight</dt>
+            <dd>Users wanted guidance, not evaluation. Pivoted from scoring to workflow augmentation.</dd>
+          </dl>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 5. Insights / Thinking -->
+    <section id="thinking" class="section">
+      <p class="section__label">Thinking</p>
+
+      <div class="insight-groups">
+
+        <div class="insight-group">
+          <h3 class="insight-group__title">AI Systems</h3>
+          <ul class="insight-group__list">
+            <li>Multi-step pipelines fail because input quality compounds at every step.</li>
+            <li>Hallucination is structural, not incidental. Design for when it occurs.</li>
+            <li>Human-in-the-loop is not a fallback. It is an architecture decision.</li>
+          </ul>
+        </div>
+
+        <div class="insight-group">
+          <h3 class="insight-group__title">Product</h3>
+          <ul class="insight-group__list">
+            <li>Behavior change is harder than feature quality. Passive products scale; active ones struggle.</li>
+            <li>Explainability builds trust. Novelty does not.</li>
+            <li>Overengineering is the most common founder trap in AI.</li>
+          </ul>
+        </div>
+
+        <div class="insight-group">
+          <h3 class="insight-group__title">GTM</h3>
+          <ul class="insight-group__list">
+            <li>Distribution is system design, not a sales function. I learned this the hard way.</li>
+            <li>If anyone can clone it in a weekend, your moat is not technology.</li>
+            <li>Early traction does not equal repeatable commercial success. That gap is real.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. What I'm Looking For -->
+    <section id="looking-for" class="section">
+      <p class="section__label">Where I Add the Most Value</p>
+
+      <ul class="looking-for__list">
+        <li>AI products where the workflow is the product, not a feature bolted on after launch.</li>
+        <li>Zero-to-one or early-stage environments where the problem is still ambiguous and the team needs someone who can define it.</li>
+        <li>Organizations that need a bridge between technical execution and business strategy &mdash; not one or the other.</li>
+        <li>Teams with real users, real feedback loops, and a genuine desire to learn what is working.</li>
+      </ul>
+
+      <div class="contact">
+        <p class="contact__label">Get in touch</p>
+        <a href="https://www.linkedin.com/in/siovictor/" target="_blank" rel="noopener" class="contact__linkedin">
+          <svg class="contact__linkedin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">This page is not indexed and is shared selectively.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script type="module" src="pretext-balance.js"></script>
+
+</body>
+</html>
